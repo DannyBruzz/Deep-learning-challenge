@@ -22,37 +22,20 @@ The "EIN" &  "NAME" variables have been removed as we have need to identify indi
 
 ## Compiling, Training, and Evaluating the Model
 
-For this part of the assignment, you’ll write a report on the performance of the deep learning model you created for AlphabetSoup.
+### How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
-The report should contain the following:
+The initial model had 3 hidden layers with 5 units each, an input and output layer, with all having the "relu" activation function bar the output, which used "sigmoid". These were chosen as this had been used in other modelling examples. 
 
-1. **Overview** of the analysis: Explain the purpose of this analysis.
+### What steps did you take in your attempts to increase model performance?
 
-2. **Results**: Using bulleted lists and images to support your answers, address the following questions.
+Initially an additional layer was added to the model, then a keras tuner funtion was used to optimise the number of neurons and layers, which was determined to be 4 layers (6,6,16&11 neurons respectively). Finally, the activation function was changed to "tahn". 
 
-  * Data Preprocessing
-    * What variable(s) are the target(s) for your model?
-    * What variable(s) are the features for your model?
-    * What variable(s) should be removed from the input data because they are neither targets nor features?
-  
-* Compiling, Training, and Evaluating the Model
-    * How many neurons, layers, and activation functions did you select for your neural network model, and why?
-    * Were you able to achieve the target model performance?
-    * What steps did you take in your attempts to increase model performance?
+### Were you able to achieve the target model performance?
 
-3. **Summary**: Summarise the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+None of the model were able to reach the 75% accuarcy target. The keras tuned model was the closest with a 73.2% accuracy. Below are the results of each model:
 
-## Reference
 
-IRS. Tax Exempt Organization Search Bulk Data Downloads. [https://www.irs.gov/](https://www.irs.gov/charities-non-profits/tax-exempt-organization-search-bulk-data-downloads)
 
-- - -
+## Summary:
 
-## Rubric
-
-[Unit 21 Homework Rubric](https://docs.google.com/document/d/1SLOROX0lqZwa1ms-iRbHMQr1QSsMT2k0boO9YpFBnHA/edit?usp=sharing)
-
-- - - 
-
-© 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.	
-
+Overall the deep learning was close to predicting the success rate accurately, however was not sufficient. It may be more prudent to run a linear regression model as well as a PCA to limit the number of features. This will limit the data to only the most important features and may provide a more accurate modelling.
