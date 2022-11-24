@@ -35,12 +35,21 @@ Initially an additional layer was added to the model, then a keras tuner funtion
 None of the model were able to reach the 75% accuarcy target. The keras tuned model was the closest with a 73.2% accuracy. Below are the results of each model:
 
 
-### Initial Model
+### Initial Model:
 Accuracy: 72.65%
 ![image](https://user-images.githubusercontent.com/105435687/203772033-88301263-5655-433e-8f47-93e7cc844cb2.png)
 
+### Extra Hidden Layer Model:
+Accuracy: 72.59% 
+![image](https://user-images.githubusercontent.com/105435687/203772330-869f3f54-e429-4f49-ac53-7d6e1eaf1a52.png)
 
+### Keras Tuner Model:
+Accuracy: 73.22% 
+![image](https://user-images.githubusercontent.com/105435687/203772795-2afc4eb3-8430-47ec-94ba-7f87d5c6d192.png)
 
+### Tanh Model:
+Accuracy: 72.59%
+![image](https://user-images.githubusercontent.com/105435687/203773080-ef805d09-9b17-4be5-a3b6-bcd7b1ec47e6.png)
 
 
 ## Summary:
