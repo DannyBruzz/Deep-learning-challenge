@@ -1,4 +1,4 @@
-# Unit 21 Homework Report: Charity Funding Predictor
+# Deep-learning-challenge Report: Charity Funding Predictor
 
 ## Overview of the analysis:
 
